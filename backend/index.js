@@ -13,6 +13,7 @@ app.use(cors({ origin: 'http://localhost:4200' }));
 // Rutas de nuestro servidor
 app.use('/api/usuarios', require('./routes/usuario.route'));
 app.use('/api/obrablanca', require('./routes/obrablanca.route'));
+app.use('/api/madera', require('./routes/madera.route'));
 
 // Sincronizar con la base de datos antes de iniciar el servidor
 sequelize.sync({ force: false }) // Crea tablas si no existen, pero no elimina datos

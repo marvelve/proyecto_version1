@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../database'); // Asegúrate de que este sea el archivo que configura tu conexión a la base de datos
+const sequelize = require('../database');
 
 const Usuario = sequelize.define('Usuario', {
   nombre: {
